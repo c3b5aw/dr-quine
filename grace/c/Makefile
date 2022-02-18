@@ -16,6 +16,7 @@ $(NAME): $(OBJS)
 .PHONY:	clean
 clean:
 	rm -rf $(OBJS)
+	rm -f $(NAME)_kid.c
 
 .PHONY: fclean
 fclean: clean
