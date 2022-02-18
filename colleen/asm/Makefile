@@ -5,7 +5,7 @@ LDFLAGS		:= -no-pie -Wall -Wextra -Werror
 CC			:= nasm
 CFLAGS		:= -f elf64
 
-SRCS 		:= colleen.s
+SRCS 		:= Colleen.s
 OBJS		:= $(SRCS:.s=.o)
 
 .PHONY:	all

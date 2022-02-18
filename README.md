@@ -7,7 +7,7 @@
 |**Colleen**|
 |**C**|✅|
 |**Go**|✅|
-|**ASM**|❌|
+|**ASM**|✅|
 |**Grace**|
 |**C**|❌|
 |**Go**|❌|
@@ -43,7 +43,7 @@
 
 ### ASM
 
-![Arguments](https://raw.githubusercontent.com/c3b5aw/dr-quine/main/docs/j8hnpC.png)
+![Arguments](https://raw.githubusercontent.com/c3b5aw/dr-quine/main/docs/images/j8hnpC.png)
 ```
 	Arguments like in C.
 ```

@@ -1,6 +1,6 @@
 NAME		:= Colleen
 CC			:= go
-SRCS 		:= colleen.go
+SRCS 		:= Colleen.go
 
 .PHONY:	all
 all:	$(NAME)

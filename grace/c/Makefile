@@ -1,7 +1,7 @@
-NAME		:= Colleen
+NAME		:= Grace
 CC			:= cc
 CFLAGS		:= -Wall -Wextra -Werror
-SRCS 		:= Colleen.c
+SRCS 		:= Grace.c
 OBJS		:= $(SRCS:.c=.o)
 
 .PHONY:	all
@@ -16,7 +16,6 @@ $(NAME): $(OBJS)
 .PHONY:	clean
 clean:
 	rm -rf $(OBJS)
-	rm -f $(NAME).out
 
 .PHONY: fclean
 fclean: clean
@@ -27,5 +26,5 @@ re: fclean all
 
 .PHONY: test
 test: re
-	./$(NAME) > $(NAME).out
-	diff $(NAME).out $(SRCS)
+	./$(NAME)
+	diff $(NAME).c $(NAME)_kid.c
