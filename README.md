@@ -40,3 +40,10 @@
 	%[2]c
 	%[argument_index]format
 ```
+
+### ASM
+
+![Arguments](https://raw.githubusercontent.com/c3b5aw/dr-quine/main/docs/j8hnpC.png)
+```
+	Arguments like in C.
+```

@@ -1,17 +1,21 @@
 NAME		:= Colleen
-CC			:= cc
-CFLAGS		:= -Wall -Wextra -Werror
-SRCS 		:= colleen.c
-OBJS		:= $(SRCS:.c=.o)
+LD			:= cc
+LDFLAGS		:= -no-pie -Wall -Wextra -Werror
+
+CC			:= nasm
+CFLAGS		:= -f elf64
+
+SRCS 		:= colleen.s
+OBJS		:= $(SRCS:.s=.o)
 
 .PHONY:	all
 all:	$(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	$(LD) $(LDFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o :%.s
+	$(CC) $(CFLAGS) $< -o $@
 
 .PHONY:	clean
 clean:
