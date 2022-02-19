@@ -1,6 +1,7 @@
-NAME		:= Colleen
+NAME		:= Grace
 CC			:= go
-SRCS 		:= Colleen.go
+EXT			:= go
+SRCS 		:= Grace.$(EXT)
 
 .PHONY:	all
 all:	$(NAME)
@@ -10,8 +11,7 @@ $(NAME):
 
 .PHONY:	clean
 clean:
-	rm -rf $(OBJS)
-	rm -f $(NAME).out
+	rm -f $(NAME)_kid.$(EXT)
 
 .PHONY: fclean
 fclean: clean
@@ -22,5 +22,5 @@ re: fclean all
 
 .PHONY: test
 test: re
-	./$(NAME) > $(NAME).out
-	diff $(NAME).out $(SRCS)
+	./$(NAME)
+	diff $(NAME).$(EXT) $(NAME)_kid.$(EXT)

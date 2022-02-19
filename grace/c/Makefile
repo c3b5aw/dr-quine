@@ -1,7 +1,8 @@
 NAME		:= Grace
 CC			:= cc
 CFLAGS		:= -Wall -Wextra -Werror
-SRCS 		:= Grace.c
+EXT			:= c
+SRCS 		:= Grace.$(EXT)
 OBJS		:= $(SRCS:.c=.o)
 
 .PHONY:	all
@@ -10,13 +11,13 @@ all:	$(NAME)
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.c
+%.o: %.$(EXT)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY:	clean
 clean:
 	rm -rf $(OBJS)
-	rm -f $(NAME)_kid.c
+	rm -f $(NAME)_kid.$(EXT)
 
 .PHONY: fclean
 fclean: clean
@@ -28,4 +29,4 @@ re: fclean all
 .PHONY: test
 test: re
 	./$(NAME)
-	diff $(NAME).c $(NAME)_kid.c
+	diff $(NAME).$(EXT) $(NAME)_kid.$(EXT)
