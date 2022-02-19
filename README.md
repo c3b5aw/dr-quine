@@ -11,14 +11,14 @@
 |**Grace**|
 |**C**|✅|
 |**Go**|✅|
-|**ASM**|❌|
+|**ASM**|✅|
 |**Sully**|
 |**C**|❌|
 |**Go**|❌|
 |**ASM**|❌|
 
 
-## colleen
+## Colleen
 
 ### C
 ```
@@ -47,3 +47,8 @@
 ```
 	Arguments like in C.
 ```
+
+## Grace
+
+###
+![std flib](https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/ch13/CH13-10.html)
