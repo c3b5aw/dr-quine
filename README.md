@@ -14,7 +14,7 @@
 |**ASM**|✅|
 |**Sully**|
 |**C**|✅|
-|**Go**|❌|
+|**Go**|✅|
 |**ASM**|❌|
 
 
@@ -52,3 +52,5 @@
 
 ###
 ![std flib](https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/ch13/CH13-10.html)
+
+## Sully
