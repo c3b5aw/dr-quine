@@ -1,6 +1,8 @@
 # dr-quine
 
-**Final mark**: ...
+**Time:**: ~10h ( Without any asm practice )
+
+**Final mark**: .../125
 
 |Language|State|
 |:---:|:---:|
@@ -54,3 +56,7 @@
 ![std flib](https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/ch13/CH13-10.html)
 
 ## Sully
+
+Trick is to check if sully_5 has been generated in order to decrease integer.
+
+However, we could have checked if the program name was equal to the Parent ("Sully")
